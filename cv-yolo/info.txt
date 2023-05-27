@@ -1,1 +1,1 @@
-
+Download coco.names, yolo3.cfg, and yolov3.weights for object detection
