@@ -61,7 +61,7 @@ scale = 0.60
 #             if cv2.waitKey(1) & 0xFF == ord('x'):
 #                 break
 #             time_start = time_end
-def
+# def
 
 def gpu_camera():
     'Create frame on GPU'
