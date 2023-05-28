@@ -113,8 +113,6 @@ def cpu_camera():
         fps = 1 / (time_end - time_start)
         fps = f'CPU: Frame rate: {str(int(fps))}'
 
-
-
         cv2.putText(filter, fps, position, font, fontScale, fontColor, thickness)
         cv2.imshow("CPU", filter)
 
