@@ -10,14 +10,15 @@ fontScale = 2
 fontColor = (255, 0, 250)
 thickness = 2
 
-net = cv2.dnn.readNet(r"C:\Users\Public\Documents\opencv-project\files\yolov3.cfg",
-                      r"C:\Users\Public\Documents\opencv-project\files\yolov3.weights")
-
+# net = cv2.dnn.readNet(r"C:\Users\Public\Documents\opencv-project\files\yolov3.cfg",
+#                       r"C:\Users\Public\Documents\opencv-project\files\yolov3.weights")
+net = cv2.dnn.readNet(r"C:\Users\Public\Documents\opencv\cv-gpu-cpu\files\yolov3.cfg",
+                      r"C:\Users\Public\Documents\opencv\cv-gpu-cpu\files\yolov3.weights")
 # net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
 # net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
 
 classes = []
-with open("files\coco.names", "r") as f:
+with open(r"C:\Users\Public\Documents\opencv\cv-gpu-cpu\files\coco.names", "r") as f:
     classes = f.read().splitlines()
     # print(classes)
 
